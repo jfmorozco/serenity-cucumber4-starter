@@ -7,8 +7,9 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import starter.navigation.NavigateTo;
-import starter.search.SearchFor;
-import starter.search.SearchResult;
+import starter.titles.TitlesOverview;
+import starter.titles.TitlesData;
+import starter.empleos.AccessEmpleos;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
@@ -22,8 +23,8 @@ public class SearchOnDuckDuckGoStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @Given("^(.*) is on the DuckDuckGo home page")
-    public void on_the_DuckDuckGo_home_page(String actor) {
+    @Given("^(.*) is on the home page")
+    public void is_on_the_home_page(String actor) {
         theActorCalled(actor).attemptsTo(NavigateTo.theDuckDuckGoHomePage());
     }
 
@@ -31,7 +32,7 @@ public class SearchOnDuckDuckGoStepDefinitions {
     public void search_for(String term) {
 
         withCurrentActor(
-                SearchFor.term(term)
+                AccessEmpleos.withoutCredentials()
         );
     }
 

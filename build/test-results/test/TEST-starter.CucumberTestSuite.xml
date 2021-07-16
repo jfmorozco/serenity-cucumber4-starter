@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="starter.CucumberTestSuite" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-LHLIBAN" time="0.0">
   <properties/>
-  <system-out><![CDATA[00:41:37.773 [Test worker] INFO   - 
+  <system-out><![CDATA[10:24:40.019 [Test worker] INFO   - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -18,21 +18,19 @@
  Learn Serenity BDD online at https://www.serenitydojo.net                           
 -------------------------------------------------------------------------------------
 
-00:41:37.795 [Test worker] INFO   - Test Suite Started: Login into the application
-00:41:54.220 [Test worker] ERROR  - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+10:24:40.029 [Test worker] INFO   - Test Suite Started: Search by keyword
+10:25:00.244 [Test worker] INFO   - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-Successful login
---------------------------------------------------------------------------
-00:41:54.414 [Test worker] ERROR  -     Test failed at step: Then The displayed credit available should be '$17,800'
-00:41:54.415 [Test worker] ERROR  -     Expected: "$17,800" but: was "      $17,800        "
+Searching for a term
+----------------------------------------------------------------------------
 ]]></system-out>
-  <system-err><![CDATA[jul 16, 2021 12:41:38 AM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
+  <system-err><![CDATA[jul 16, 2021 10:24:40 AM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
 ADVERTENCIA: Loading deprecated ObjectFactory from runtime via reflection: cucumber.runtime.SerenityObjectFactory
 ]]></system-err>
 </testsuite>
