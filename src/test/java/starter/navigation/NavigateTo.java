@@ -11,4 +11,11 @@ public class NavigateTo {
                 Open.browserOn().the(DuckDuckGoHomePage.class)
         );
     }
+
+    public static Performable theLoginPage() {
+        return Task.where("{0} opens the log in page",
+                Open.browserOn().the(LoginPage.class)
+        );
+    }
+
 }

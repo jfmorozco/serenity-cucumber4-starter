@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 public class SearchFor {
 
-    public static Performable term(String term) {
+    public static Performable  term(String term) {
         return Task.where("{0} attempts to search for #term",
                 Clear.field(SearchForm.SEARCH_FIELD),
                 Enter.theValue(term).into(SearchForm.SEARCH_FIELD),
