@@ -28,16 +28,20 @@ public class SearchOnDuckDuckGoStepDefinitions {
         theActorCalled(actor).attemptsTo(NavigateTo.theDuckDuckGoHomePage());
     }
 
-    @When("she/he searches for {string}")
-    public void search_for(String term) {
+    @When("he access {string}")
+    public void he_access(String term) {
 
         withCurrentActor(
                 AccessEmpleos.withoutCredentials()
         );
     }
 
-    @Then("all the result titles should contain the word {string}")
-    public void all_the_result_titles_should_contain_the_word(String term) {
-
+    @Then("all the titles should be correct")
+    public void all_the_titles_should_be_correct() {
+        theActorInTheSpotlight().should(
+                seeThat("The first displayed title is", TitlesData.firstTitle(), equalTo("SER CHOUCAIR")),
+                seeThat("The second title is", TitlesData.secondTitle(), equalTo("CONVOCATORIAS")),
+                seeThat("The last titles is", TitlesData.thirdTitle(), equalTo("PREPARARSE PARA APLICAR"))
+        );
     }
 }
